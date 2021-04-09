@@ -1,0 +1,144 @@
+<div class="eligibility-calculator-comp">
+
+  <div class="left-cont">
+
+    <mat-card class="fee-calculator">
+
+      <div class="header">
+        Eligibility Calculator
+      </div>
+
+      <div class="form-cont" [formGroup]="loanForm">
+
+        <div class="slider-cont">
+          <div class="title txt-md-bld-light">
+            Monthly Income
+          </div>
+          <div class="income-amount txt-lg-med-bld">
+            ₹ {{ monthlySalary }}
+          </div>
+          <div class="slider">
+            <mat-slider
+              [min]="eligibilityCriteria.minMonthSalary"
+              [max]="eligibilityCriteria.maxMonthSalary"
+              [step]="eligibilityCriteria.salaryStep"
+              formControlName="monthlySal"
+              (input)="onMonthlySalaryChange($event)">
+            </mat-slider>
+          </div>
+          <div class="min-max-value txt-vsm-bld-light">
+            <div class="min-val">
+              {{ eligibilityCriteria.minMonthSalary }}
+            </div>
+            <div class="max-val">
+              {{ eligibilityCriteria.maxMonthSalary }}
+            </div>
+          </div>
+        </div>
+        <div class="slider-cont">
+          <div class="title txt-md-bld-light">
+            Monthly Expense
+          </div>
+          <div class="income-amount txt-lg-med-bld">
+            ₹ {{ monthlyExpense }}
+          </div>
+          <div class="slider">
+            <mat-slider
+              [min]="eligibilityCriteria.minMonthExpense"
+              [max]="eligibilityCriteria.maxMonthExpense"
+              [step]="eligibilityCriteria.expenseStep"
+              formControlName="monthlyExp"
+              (input)="onMonthlyExpenditureChange($event)">
+            </mat-slider>
+          </div>
+          <mat-error class="txt-vsm-bld-light error-text"
+            *ngIf="loanForm.controls['monthlyExp'].touched &&
+            loanForm.controls['monthlyExp'].hasError('required')">
+            Please select your monthly expenditure
+          </mat-error>
+        </div>
+
+        <div class="drop-down-cont">
+          <mat-form-field>
+            <mat-label class="txt-md-bld-light">
+              Repayment Tenure
+            </mat-label>
+            <mat-select class="txt-lg-med-bld"
+              formControlName="repaymentTenure">
+              <mat-option *ngFor="let type of eligibilityCriteria.repayTenure" [value]="type"
+                class="txt-lg-med-bld">
+                {{ type.value }}
+              </mat-option>
+            </mat-select>
+            <mat-error class="txt-vsm-bld-light error-text"
+                *ngIf="loanForm.controls['repaymentTenure'].touched &&
+                loanForm.controls['repaymentTenure'].hasError('required')">
+              Please select your repayment tenure
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="slide-toggle-cont">
+          <div class="toggle-text txt-md-bld-light">
+            Do you have any existing loan?
+          </div>
+          <div class="toggle-cont">
+            <mat-slide-toggle
+             formControlName="hasExistingLoan"
+             [checked]="false">
+            </mat-slide-toggle>
+          </div>
+        </div>
+
+        <div class="existing-loan-cont">
+
+          <div class="exist-loan-txt txt-md-bld-light">
+            EMI of existing loans (optional)
+          </div>
+
+          <input matInput
+            type="text"
+            formControlName="existingLoanEmi"
+            placeholder="₹ 15000"
+            class="input-cont txt-lg-med-bld"
+            name="input-text"
+            autocomplete="off">
+        </div>
+
+      </div>
+
+    </mat-card>
+
+  </div>
+
+  <div class="right-cont">
+    <mat-card class="bg-primary get-money-cont">
+
+      <div class="loan-amnt-cont">
+        <div class="text txt-md-med-bld text-color-light">
+          Loan Amount
+        </div>
+        <div class="amount txt-lg-med-bld text-color-white">
+          ₹ 100000
+        </div>
+      </div>
+
+      <div class="emi-amnt-cont">
+        <div class="text txt-md-med-bld text-color-light">
+          Your EMI will be
+        </div>
+        <div class="amount txt-lg-med-bld text-color-white">
+          ₹ 15000
+        </div>
+      </div>
+
+      <div class="button-cont">
+        <button class="btn txt-lg-bld-dark" (click)="getMoney()">
+          Get Money
+        </button>
+      </div>
+
+    </mat-card>
+  </div>
+
+</div>

@@ -1,0 +1,21 @@
+<div class="static-detail-comp">
+
+  <mat-card class="card-cont" (click)="onCardClick()"
+  (mouseover)="onMouseOver()"
+  (mouseleave)="onMouseLeave()">
+
+    <div class="img-cont">
+      <img class="img" [src]="loanType.imageUrl"/>
+    </div>
+
+    <div class="title txt-lg-med-bld break-word">
+      {{ loanType.title }}
+    </div>
+
+    <div class="message text-color-light txt-sm-bld-light break-word" [class.text-color-white]="showWhiteText">
+      {{ loanType.message }}
+    </div>
+
+  </mat-card>
+
+</div>

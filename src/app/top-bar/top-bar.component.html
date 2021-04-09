@@ -1,0 +1,37 @@
+<div class="top-bar-comp flex-cont" [class.scrolling]="isScrolling">
+
+  <div class="logo-cont">
+    <img class="image" src="assets/images/logo.png">
+  </div>
+
+  <div class="right-cont flex-cont">
+
+    <div class="text-cont txt-xl-med-norm" (click)="onProductClick()">
+      Products
+    </div>
+
+    <div class="text-cont txt-xl-med-norm" (click)="onSolutionsClick()">
+      Solutions
+    </div>
+
+    <div class="text-cont txt-xl-med-norm" (click)="onPricingClick()">
+      Pricing
+    </div>
+
+    <div class="button-cont flex-cont">
+      <div class="left-btn">
+        <button class="left txt-lg-bld-dark" (click)="login()">
+          Login
+        </button>
+      </div>
+
+      <div class="right-btn">
+        <button class="right txt-lg-bld-dark" (click)="onGetStarted()">
+          Get Started
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,88 @@
+<div class="nc-root-div landing-comp" (scroll)="scrolling($event)">
+
+    <app-top-bar
+      [isScrolling]="isScrolling">
+    </app-top-bar>
+
+  <div class="background">
+    <img class="first" src="assets/images/circle.svg"/>
+    <img class="second" src="assets/images/circle.svg" />
+  </div>
+
+  <div class="top-cont" *ngIf="!isLoading">
+
+    <div class="left-business-cont">
+
+      <div class="upper-cont">
+        <div class="text-cont txt-xxl-bld-dark">
+          We make it Super Simple
+        </div>
+
+        <div class="line-cont">
+        </div>
+      </div>
+
+      <div class="img-cont">
+        <img class="business-img" src="assets/images/collect-img.png"/>
+      </div>
+    </div>
+
+    <div class="right-cont">
+      <app-eligibility-calculator
+        [eligibilityCriteria]="eligibiltyCriteria">
+      </app-eligibility-calculator>
+    </div>
+
+  </div>
+
+  <div class="image-cont">
+    <img class="first-img" src="assets/images/accounting-dots.svg"/>
+    <img class="second-img" src="assets/images/accounting-dots.svg" />
+  </div>
+
+  <div class="bottom-cont" *ngIf="!isLoading">
+
+    <div class="left-cont">
+
+      <div class="left-card-cont">
+        <div class="card-cont" *ngFor="let loan of leftLoanTypes">
+          <app-static-detail
+            [loanType]="loan">
+          </app-static-detail>
+        </div>
+      </div>
+
+      <div class="right-card-cont">
+        <div class="card-cont" *ngFor="let loan of rightLoanTypes">
+          <app-static-detail
+            [loanType]="loan">
+          </app-static-detail>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="right-bottom-cont">
+
+      <div class="business-text txt-xxl-bld-dark">
+        Boost your business with open
+      </div>
+
+      <div class="line border-color-light">
+      </div>
+
+      <div class="detail-text txt-md-reg-light">
+        Get your hands on a term loan that's crafted for your business
+      </div>
+
+      <div class="button-cont">
+        <button class="btn txt-lg-bld-dark" (click)="createOpenAccount()">
+          Get an Open Account
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,87 @@
+.eligibility-calculator-comp {
+  display     : flex;
+  align-items : center;
+}
+
+.fee-calculator {
+  padding : 16px 32px;
+}
+
+.header {
+  text-align  : center;
+}
+
+.form-cont {
+  padding : 32px 0 16px 0;
+  width   : 24vw;
+}
+
+mat-slider {
+  padding : 0;
+  height  : 35px;
+  width   : 100%;
+}
+
+.income-amount {
+  padding-top : 10px;
+}
+
+.slider-cont, .drop-down-cont, .existing-loan-cont {
+  padding : 20px 0;
+}
+
+.min-max-value {
+  display         : flex;
+  justify-content : space-between;
+}
+
+.slide-toggle-cont {
+  padding-bottom  : 20px;
+}
+
+mat-form-field {
+  width : 100%;
+}
+
+.slide-toggle-cont {
+  display         : flex;
+  align-items     : center;
+  justify-content : space-between;
+}
+
+.input-cont {
+  border-bottom-style : solid;
+  border-bottom-width : 1px;
+  padding             : 10px 0;
+}
+
+.loan-amnt-cont {
+  display         : flex;
+  flex-direction  : column;
+  align-items     : center;
+  padding         : 4vw 2vw 0;
+}
+
+.emi-amnt-cont {
+  display         : flex;
+  flex-direction  : column;
+  align-items     : center;
+  padding         : 2vw 2vw 1vw;
+}
+
+.button-cont {
+  display         : flex;
+  justify-content : center;
+  padding-bottom  : 4vw;
+}
+
+.btn {
+  background-color  : #FFFFFF;
+  color             : #663399;
+  padding           : 6px 30px;
+  border-radius     : 24px;
+  outline           : none;
+}
+
+
+

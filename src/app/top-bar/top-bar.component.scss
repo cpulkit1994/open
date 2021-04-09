@@ -1,0 +1,53 @@
+.top-bar-comp {
+  justify-content : space-between;
+  padding         : 10px 4vw;
+  position        : sticky;
+  top             : 0;
+  z-index         : 100;
+}
+
+.scrolling {
+  background  : #FFFFFF;
+  box-shadow  : 0px 2px 1px -2px;
+}
+
+.logo-cont {
+  width : 100px;
+
+  .image {
+    width : 100%;
+  }
+}
+
+.flex-cont {
+  display     : flex;
+  align-items : center;
+}
+
+button {
+  border-radius : 24px;
+  outline       : none;
+}
+
+.left {
+  background-color  : #FFFFFF;
+  border-color      : #663399;
+  color             : #663399;
+  padding           : 6px 30px;
+}
+
+.right {
+  background  :  linear-gradient(to right, #9F62C9, #663399);
+  color       : #FFFFFF;
+  margin-left : 20px;
+  padding     : 6px 36px;
+}
+
+.text-cont {
+  padding-right : 2vw;
+}
+
+.text-cont:hover {
+  color   : #9F62C9;
+  cursor  : default;
+}

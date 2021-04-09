@@ -1,0 +1,111 @@
+.top-cont {
+  position        : relative;
+  top             : -14vw;
+  display         : flex;
+  justify-content : space-between;
+  padding         : 0 4vw 0 calc(4vw + 18px);
+}
+
+.upper-cont {
+  width   : 250px;
+  padding : 0 30px 50px;
+}
+
+.line-cont {
+  border        : solid;
+  border-width  : 2px;
+  width         : 160px;
+}
+
+.img-cont {
+  width   : 400px;
+  z-index : 50;
+
+  .business-img {
+    width : 100%;
+  }
+}
+
+.bottom-cont {
+  display     : flex;
+  align-items : center;
+  padding     : 4vw 4vw 10px 6vw;
+  background  : url('/assets/images/sol-wave.svg');
+}
+
+.left-cont {
+  display     : flex;
+  align-items : center;
+}
+
+.right-cont {
+  z-index : 50;
+}
+
+.right-bottom-cont {
+  width         : 22vw;
+  padding-left  : 6vw;
+}
+
+.line {
+  border        : solid;
+  border-width  : 2px;
+  width         : 160px;
+  margin        : 2vw 0 1vw;
+}
+
+.background {
+  height    : 28vw;
+  width     : 100vw;
+  position  : relative;
+  z-index   : 50 ;
+}
+
+.first {
+  position  : absolute;
+  height    : 30vw;
+  width     : 38vw;
+  left      : -16vw;
+  top       : 4vw;
+}
+
+.second {
+  position  : absolute;
+  height    : 66svw;
+  width     : 66vw;
+  right     : -6vw;
+  top       : -20vw;
+}
+
+.first-img {
+  position  : absolute;
+  width     : 20vw;
+  left      : 20vw;
+  top       : -30vw;
+}
+
+.second-img {
+  position  : absolute;
+  width     : 20vw;
+  right     : 3vw;
+  top       : -15vw;
+}
+
+.button-cont {
+  padding : 2vw 0;
+}
+
+.image-cont {
+  position  : relative;
+}
+
+.btn {
+  background-color  : #FFFFFF;
+  border-color      : #663399;
+  color             : #663399;
+  padding           : 6px 30px;
+  border-radius     : 24px;
+  outline           : none;
+}
+
+

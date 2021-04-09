@@ -1,0 +1,156 @@
+/* You can add global styles to this file, and also import other style files */
+
+//Font Family Variables
+
+@font-face {
+  font-family : 'bold-xd';
+  src         : url('assets/fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family : 'regular-xd';
+  src         : url('assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family : 'semi-bold-xd';
+  src         : url('assets/fonts/Montserrat-SemiBold.ttf');
+}
+
+//Text classes
+
+.txt-xxl-bld-dark {
+  font-family : 'bold-xd';
+  font-size   : 34px;
+}
+
+.txt-xl-med-norm {
+  font-family : 'Open Sans', Regular;
+  font-size   : 24px;
+}
+
+.txt-lg-med-bld {
+  font-family : 'semi-bold-xd';
+  font-weight : 600;
+  font-size   : 16px;
+}
+
+.txt-lg-bld-dark {
+  font-family : 'bold-xd';
+  font-size   : 16px;
+}
+
+.txt-md-bld-dark {
+  font-family : 'bold-xd';
+  font-size   : 14px;
+}
+
+.txt-md-med-bld {
+  font-family : 'semi-bold-xd';
+  font-weight : 600;
+  font-size   : 14px;
+}
+
+.txt-md-reg-light {
+  font-family : 'regular-xd';
+  font-weight : initial;
+  font-size   : 14px;
+  color       : #999999;
+}
+
+.txt-md-bld-light {
+  font-family : 'regular-xd';
+  font-weight : 600;
+  font-size   : 14px;
+  color       : #999999;
+}
+
+.txt-sm-bld-light {
+  font-family : 'regular-xd';
+  font-weight : initial;
+  font-size   : 12px;
+}
+
+.txt-vsm-bld-light {
+  font-family : 'regular-xd';
+  font-weight : initial;
+  font-size   : 10px;
+  color       : #999999;
+}
+
+// Global Css classes
+
+html, body {
+  height    : 100vh;
+  width     : 100vw;
+  overflow  : hidden;
+  margin    : 0;
+}
+
+.nc-root-div {
+  height      : 100vh;
+  width       : 100vw;
+  overflow    : auto;
+  overflow-x  : hidden;
+  z-index     : 100;
+}
+
+*::-webkit-scrollbar {
+  width : 8px !important;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow    : inset 0 0 5px #00000033 !important;
+  border-radius : 10px !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  background    : #00000033 !important;
+  border-radius : 10px !important;
+}
+
+.bg-primary {
+  background  : #663399;
+}
+
+button:hover {
+  background  : #9F62C9 !important;
+  color       : #FFFFFF !important;
+}
+
+.text-color-white {
+  color : #FFFFFF !important;
+}
+
+.border-color-light {
+  border-color : #707070 !important;
+}
+
+.error-text {
+  color : red !important;
+}
+
+.text-color-light {
+  color : #999999;
+}
+
+//overriding material color theme
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+  background-color  : #663399;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color  : #663399;
+}
+
+.mat-accent .mat-slider-thumb {
+  background-color:  #663399;
+}
+
+.mat-accent .mat-slider-track-fill {
+  background-color  : #663399 !important;
+}
+
+
+

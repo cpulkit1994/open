@@ -1,0 +1,23 @@
+.card-cont {
+  margin        : 0 2vw 2vw 0;
+  padding       : 2vw;
+  width         : 286px;
+  border-radius : 20px;
+}
+
+.message {
+  color : #999999;
+}
+
+.card-cont:hover {
+  background-color  : #9F62C9;
+  color             : #FFFFFF !important;
+}
+
+.title {
+  padding : 16px 0;
+}
+
+.break-word {
+  word-break  : break-all;
+}
